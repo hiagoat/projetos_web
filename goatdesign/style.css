@@ -1,0 +1,128 @@
+/* Configurações gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e4e2dd; /* Bege */
+    margin: 0;
+    padding: 0;
+    color: #393939; /* Cinza escuro */
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #393939; /* Cinza escuro */
+    color: #e4e2dd; /* Bege */
+    padding: 20px;
+}
+
+header .logo {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 10px 0 0;
+    font-size: 24px;
+}
+
+/* Links principais */
+.links {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os botões */
+}
+
+.button {
+    display: inline-block;
+    background-color: #393939; /* Botões em cinza escuro */
+    color: #e4e2dd; /* Texto em bege */
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra dos botões */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 250px;
+    text-align: center;
+}
+
+/* Efeito hover nos botões */
+.button:hover {
+    background-color: #575757; /* Um tom mais claro de cinza */
+    transform: scale(1.05); /* Pequeno zoom ao passar o mouse */
+}
+
+.produtos {
+    padding: 20px;
+    text-align: center;
+}
+
+.produtos h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #393939;
+}
+
+.produtos .produto {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.produtos img {
+    width: 100%; /* Ajusta a imagem ao tamanho do container */
+    max-width: 300px; /* Limita a largura máxima */
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #393939;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Efeito de profundidade */
+    transition: transform 0.3s ease; /* Suaviza o efeito de zoom */
+}
+
+/* Zoom ao passar o mouse */
+.produtos img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Realça a sombra */
+}
+
+.produtos p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #393939;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .produtos .produto {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .produtos img {
+        max-width: 90%;
+    }
+}
+.voltar-inicio {
+    margin-top: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #393939;
+    color: #e4e2dd;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #575757;
+    transform: scale(1.05);
+}
